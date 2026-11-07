@@ -12,6 +12,13 @@ WatermarkPro is an **offline desktop tool** for applying watermarks across indiv
 
 <sub>Click to view the full-size Home screenshot. Local folder locations have been permanently covered.</sub>
 
+**Closer view of the batch and watermark controls**
+
+<a href="assets/screenshots/WatermarkPro_Controls_Closeup_Safe.png"><img src="assets/screenshots/WatermarkPro_Controls_Closeup_Safe.png" alt="Detailed view of the Home tab's Start Batch control and watermark text options" width="100%"></a>
+
+<sub>The original Home screenshot can be opened at full size; this second crop makes smaller controls easier to read.</sub>
+
+
 The Home tab gives the user one place to work through the essential setup.
 
 | Visible area | What it enables |
@@ -28,6 +35,13 @@ The Home tab gives the user one place to work through the essential setup.
 <p align="center"><a href="assets/screenshots/WatermarkPro_Preview_Safe.png"><img src="assets/screenshots/WatermarkPro_Preview_Safe.png" alt="WatermarkPro Preview tab showing a demonstration image with a red text watermark, a WP logo, a QR code, and image navigation controls." width="650"></a></p>
 
 <sub>Example preview shown with demonstration content; image navigation and thumbnails support checking the selected inputs.</sub>
+
+**Closer view of the watermark example**
+
+<p align="center"><a href="assets/screenshots/WatermarkPro_Preview_Closeup_Safe.png"><img src="assets/screenshots/WatermarkPro_Preview_Closeup_Safe.png" alt="Complete sample watermark preview crop with red text, WP logo, and QR mark" width="410"></a></p>
+
+<sub>This image is cropped from the real Preview tab; it is **not** a verified exported output or a before-and-after pair.</sub>
+
 
 The Preview tab helps the user assess the **primary watermark's appearance and placement** before a longer batch. The example contains a text overlay, logo mark, and QR element.
 
