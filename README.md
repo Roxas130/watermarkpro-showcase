@@ -1,105 +1,95 @@
+![WatermarkPro — illustrated project banner](assets/watermarkpro-banner.svg)
+
+<sub>Original portfolio illustration; not a screenshot of the application's interface.</sub>
+
 # WatermarkPro
 
-**Offline image watermarking, batch processing, and practical software reliability.**
+**An offline desktop application for applying consistent image watermarks, with a focus on dependable batch workflows and real-world testing.**
 
-*Independent desktop application project · Windows-first · Ubuntu beta evaluation*
+*Independent software project · Windows primary platform · Ubuntu 22.04/24.04 beta evaluation*
 
-> **Public portfolio, not a software download.** This showcase contains selected product descriptions and testing evidence. The application source code, internal workflows, installers, executables, private reports, and commercial distribution materials remain private.
+> [!NOTE]
+> **Portfolio only — not an application download.** This public repository documents the project and selected evidence of my work. The proprietary application source, development history, installers, executable files, and internal release materials remain private.
 
-**Explore:** [Product walkthrough](PRODUCT_TOUR.md) · [Reliability case study](CASE_STUDY.md) · [Testing evidence](TESTING.md) · [Rights and availability](RIGHTS.md)
+### Explore the project
+
+| **See what it does** | **See how I solved problems** | **See what I tested** |
+| :--- | :--- | :--- |
+| [Product walkthrough →](PRODUCT_TOUR.md) | [Reliability case study →](CASE_STUDY.md) | [Testing and validation →](TESTING.md) |
+| Watermarks, preview, batch export, reusable settings | Diagnosing an unexpected performance problem | Windows checks, Ubuntu VM evaluation, cancellation and file-safety checks |
 
 ---
 
-## The project in 30 seconds
+## At a glance: three pieces of evidence
 
-WatermarkPro is a desktop application designed to help people apply consistent watermarks to images **locally**. Rather than being a one-off image-processing script, the project explores a complete workflow: choosing images, setting up a watermark, reviewing a preview, running a batch, and checking the results.
-
-| Product | Technical work | Current availability |
+| **~1.5 GB → ~117 KB** | **33-image cancellation test** | **2 Ubuntu LTS versions** |
 | :--- | :--- | :--- |
-| Text, logo/image and QR watermarks; reusable settings; preview and batch export | Python desktop development, troubleshooting, hands-on testing, release validation and documentation | Private pre-release project. **No public app download** in this repository |
-| Local file processing, optional ZIP packaging and history | Windows physical-device checks and Ubuntu 22.04/24.04 virtual-machine evaluation | Windows is the primary platform; Linux testing is **not** a claim of a supported public release |
+| Preserved settings file size before and after a specific repair validation | 4 completed · 29 cancelled · 0 failed in one documented Windows test | Evaluations of Ubuntu **22.04** and **24.04** beta packages in virtual machines |
 
-## A typical user journey
+*These are examples from specific private tests, not universal performance claims or third-party certification. [How the evidence was collected](TESTING.md).*
+
+## What WatermarkPro does
+
+Watermarking many images should not require repeating the same choices over and over. WatermarkPro brings these tasks together in a local desktop workflow:
+
+| **Create** | **Preview** | **Process & review** |
+| :--- | :--- | :--- |
+| Work with text, logo/image and QR watermarks | Adjust appearance and inspect the main watermark before export | Run batches, check outputs, save reusable settings, and optionally create ZIP archives |
 
 ```mermaid
 flowchart LR
-    A["Choose images"] --> B["Set watermark"]
-    B --> C["Check preview"]
+    A["Choose local images"] --> B["Configure watermark"]
+    B --> C["Preview"]
     C --> D["Run batch"]
-    D --> E["Review outputs"]
-    E --> F["Optional ZIP"]
+    D --> E["Check exported images"]
 ```
 
-*User-facing workflow, not a diagram of the application's internal implementation.*
+*Conceptual user journey—not the internal program architecture. The preview shows the primary watermark; some multi-watermark layouts are applied during final export.*
 
-| Step | What matters to the user |
+**[Explore the product step by step →](PRODUCT_TOUR.md)**
+
+## The problem I learned the most from
+
+One private Windows release candidate became very slow: ordinary actions and shutdown took roughly a minute, even though the app had previously been responsive.
+
+Instead of assuming the issue was Windows Defender or the installation format, I compared clean settings with the existing persisted state and worked through the corrective process using AI-assisted development tools. Repeated tests verified improved responsiveness and checked that existing user settings and selected original images were preserved.
+
+| Investigation | Measurable validation |
+| :--- | :--- |
+| Isolate the condition that changes performance | An affected configuration of about **1.5 GB** was reduced to about **117 KB** during preservation testing |
+| Check the repair rather than assuming success | Startup and ordinary interaction became responsive in the tested workflows; settings and outputs were checked again |
+
+**[Read the troubleshooting story and evidence →](CASE_STUDY.md)**
+
+## What I personally contributed
+
+This is **independent project experience**, not a claim of paid IT employment.
+
+- **Requirements and usability:** established workflow goals and reviewed user-facing behavior.
+- **Hands-on testing:** ran Windows tests for launch, previews, batches, cancellation, settings persistence, and outputs.
+- **Cross-platform evaluation:** tested Ubuntu packages in virtual machines, including layout, readability, and normal operation.
+- **Troubleshooting:** reproduced issues, compared conditions, examined outcomes, and checked corrective work.
+- **Release validation and documentation:** maintained repeatable checks and evaluated package behavior.
+- **AI-assisted development:** used AI tools in the implementation process; I do not claim sole authorship of every line of source code.
+
+### Skills demonstrated
+
+**Windows troubleshooting** · **Python desktop application context** · **Git/GitHub** · **Software QA** · **Regression testing** · **Ubuntu virtual machines** · **Technical documentation** · **Release verification**
+
+For employers, the value of this project is not only the app itself—it is the evidence of **systematic testing, investigating failures, protecting user files, and validating fixes**.
+
+## Project status and privacy
+
+| Area | Status |
 | --- | --- |
-| **Prepare** | Work with local image files and choose text, logo/image, or QR watermarks |
-| **Preview** | Review the primary watermark's appearance before running a batch |
-| **Repeat** | Reuse settings or templates to apply consistent choices across images |
-| **Export** | Process a batch, check output files, and optionally package them into a ZIP |
-| **Recover** | See meaningful progress, cancellation results, and history rather than guessing what happened |
+| **Windows** | Primary development and physical testing platform |
+| **Ubuntu** | 22.04/24.04 beta packages evaluated in VMs; public support is not claimed |
+| **macOS** | Not supported |
+| **Availability** | Private pre-release project; **no software downloads or sales link** in this portfolio |
+| **Source and rights** | Proprietary; [read the rights notice](RIGHTS.md) |
 
-**[See the more detailed product walkthrough →](PRODUCT_TOUR.md)**
+**Portfolio media:** Actual interface screenshots and a demonstration can be added after a separate review for private paths, credentials, internal release information, and unreleased features. The banner above is illustrative artwork, not an application screenshot.
 
-## The technical story behind the product
+**Contact for professional inquiries:** [GitHub profile](https://github.com/Roxas130).
 
-<details>
-<summary><strong>1. Troubleshooting a severe slowdown</strong></summary>
-
-During physical Windows testing, ordinary actions that were previously responsive began taking roughly a minute. Instead of attributing the slowdown to antivirus activity or packaging, I compared controlled conditions, isolated persisted application state, and helped validate the repair.
-
-| Evidence point | Result |
-| --- | --- |
-| Problem | Long startup, file interaction and shutdown delays during private testing |
-| Affected configuration | Approximately **1.5 GB** |
-| Preserved configuration after repair validation | Approximately **117 KB** |
-| User-impact check | Responsive behavior returned; important settings and original images were retained during verification |
-
-[Read the reliability investigation and verification steps](CASE_STUDY.md).
-
-</details>
-
-<details>
-<summary><strong>2. Testing across Windows and Ubuntu</strong></summary>
-
-The project has involved hands-on Windows tests and repeatable Ubuntu 22.04/24.04 virtual-machine evaluations. Checks cover launching, previewing, batch processing, cancellation, settings persistence, output integrity, interface readability, and package behavior. This is project-level validation, **not third-party certification** or a guarantee of compatibility across all hardware.
-
-[Explore the test matrix and example results](TESTING.md).
-
-</details>
-
-## My contribution
-
-I have been involved in **requirements and workflow decisions, iterative AI-assisted development, hands-on Windows testing, Ubuntu virtual-machine evaluations, investigating reproducible problems, reviewing fixes, release-validation checks, and documentation**.
-
-I use AI-assisted development tools as part of the implementation process. The accomplishments highlighted here describe my project involvement and testing work; they do **not** claim professional IT employment or sole authorship of every line of code.
-
-### Skills this project helps demonstrate
-
-| Skill | Evidence in WatermarkPro |
-| --- | --- |
-| **Systematic troubleshooting** | Comparing clean and affected settings to isolate a performance problem |
-| **Functional and regression testing** | Checking workflows before and after changes, including cancellation and file safety |
-| **Desktop and OS support** | Investigating Windows application behavior and evaluating Ubuntu packages in VMs |
-| **Documentation** | Keeping repeatable checks, expected outcomes, and observed results |
-| **User-centered thinking** | Paying attention to previews, preserved originals, meaningful status information, and recoverability |
-| **Release readiness** | Verifying that packaged applications launch, run workflows, and can be reopened or reinstalled |
-
-## Technical context
-
-**Python desktop application** · **Tk-based interface** · **image-processing libraries** · **Git/GitHub** · **Windows packaging** · **Ubuntu virtual machines** · **manual and automated validation**
-
-This section deliberately stays at a high level; the showcase is about product behavior and engineering process, not source-code disclosure.
-
-## About this public repository
-
-**Included:** documentation, a sanitized technical case study, a testing overview, and distribution boundaries.
-
-**Not included:** source code, application downloads, installer packages, private Git history, internal CI/build instructions, proprietary implementation details, credentials, or customer data.
-
-WatermarkPro is a **proprietary, privately developed project** with potential future commercial distribution. Nothing here represents a free or open-source release. See [RIGHTS.md](RIGHTS.md).
-
-**Professional contact:** [GitHub profile](https://github.com/Roxas130).
-
-*Interface screenshots and a short walkthrough can be added once each image has been reviewed for private paths, accounts, release details, and unreleased features.*
+<sub>WatermarkPro is a proprietary project. This public documentation does not grant rights to the application or its source code. See [RIGHTS.md](RIGHTS.md).</sub>
