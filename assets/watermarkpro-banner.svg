@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+<title id="title">WatermarkPro portfolio banner</title>
+<desc id="desc">Graphic brand illustration, not a screenshot of the application. WatermarkPro: offline watermarking, batch workflows, carefully tested.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10243B"/><stop offset=".55" stop-color="#142B3D"/><stop offset="1" stop-color="#10413F"/></linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9AF4DB"/><stop offset="1" stop-color="#77BCE8"/></linearGradient>
+  <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#25445B"/><stop offset="1" stop-color="#1A3346"/></linearGradient>
+  <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.15" fill="#83D8C4" opacity=".12"/></pattern>
+</defs>
+<rect width="1200" height="380" rx="28" fill="url(#bg)"/>
+<rect width="1200" height="380" rx="28" fill="url(#dots)"/>
+<circle cx="1110" cy="-10" r="220" fill="#40BDA8" opacity=".05"/>
+<circle cx="800" cy="425" r="260" fill="#51B8CE" opacity=".055"/>
+<rect x="42" y="38" width="70" height="70" rx="21" fill="#183C50" stroke="#58D4C3" stroke-opacity=".65" stroke-width="2"/>
+<path d="M57 61 L67 87 L78 69 L89 87 L101 61" fill="none" stroke="url(#shine)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="133" y="70" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#A0E7DD" letter-spacing="2.2">INDEPENDENT SOFTWARE PROJECT</text>
+<text x="42" y="181" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="700" fill="#F4FAFC">Watermark<tspan fill="#8DEBCF">Pro</tspan></text>
+<text x="45" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="25" fill="#C9DFE6">Offline image watermarking. Repeatable batch workflows.</text>
+<text x="45" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="25" fill="#C9DFE6">Practical software reliability, tested on Windows and Ubuntu.</text>
+<rect x="42" y="303" width="170" height="42" rx="21" fill="#1D5260" stroke="#62C7BE" stroke-opacity=".55"/>
+<text x="127" y="330" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#DDFBF2">LOCAL PROCESSING</text>
+<rect x="223" y="303" width="167" height="42" rx="21" fill="#1D5260" stroke="#62C7BE" stroke-opacity=".55"/>
+<text x="306" y="330" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#DDFBF2">BATCH EXPORT</text>
+<rect x="401" y="303" width="175" height="42" rx="21" fill="#1D5260" stroke="#62C7BE" stroke-opacity=".55"/>
+<text x="488" y="330" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#DDFBF2">TESTED WORKFLOWS</text>
+<!-- Abstract document motif. Intentionally not a real UI screenshot. -->
+<rect x="895" y="83" width="230" height="224" rx="16" fill="#0B1D2C" opacity=".42"/>
+<rect x="831" y="62" width="230" height="224" rx="16" fill="#163448" stroke="#508EA2" stroke-width="2"/>
+<rect x="765" y="44" width="230" height="224" rx="16" fill="url(#tile)" stroke="#85D6D1" stroke-opacity=".6" stroke-width="2"/>
+<rect x="781" y="60" width="198" height="136" rx="9" fill="#2B4E5C"/>
+<path d="M795 173 L842 126 L872 155 L912 101 L968 173 Z" fill="#548D8C" opacity=".78"/>
+<circle cx="830" cy="94" r="13" fill="#91CCAA" opacity=".9"/>
+<rect x="789" y="208" width="114" height="9" rx="4.5" fill="#99CAD0" opacity=".55"/>
+<rect x="789" y="226" width="174" height="9" rx="4.5" fill="#99CAD0" opacity=".27"/>
+<g transform="translate(878 151) rotate(-22)">
+<rect x="-89" y="-23" width="178" height="46" rx="12" fill="#122E39" fill-opacity=".77" stroke="#B4FAE6" stroke-width="2"/>
+<text x="0" y="9" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="2" fill="#D6FFF4">WATERMARK</text>
+</g>
+<path d="M1010 301 L1075 301" stroke="#8AE3D4" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+<path d="M1085 301 L1117 301" stroke="#8AE3D4" stroke-width="3" stroke-linecap="round" opacity=".35"/>
+</svg>
