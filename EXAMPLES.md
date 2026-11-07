@@ -8,16 +8,18 @@ These pairs use **real images processed through WatermarkPro**. The **Before** i
 
 ---
 
-## 1. Fantasy illustration — Text, logo, and QR together
+## 1. Armored knight — Minimal branding on digital artwork
 
-A detailed portrait scene demonstrating multiple watermark elements on a single piece of artwork. The watermark text stays unobtrusive while the logo and QR code remain recognizable.
+A dark fantasy portrait demonstrating watermark text and a visible logo badge on a single-subject illustration.
 
 <table>
-<tr><th width="50%">Before · Original illustration</th><th width="50%">After · WatermarkPro output</th></tr>
-<tr><td align="center"><a href="assets/examples/fantasy-before.jpg"><img src="assets/examples/fantasy-before.jpg" width="350" alt="Original fantasy illustration: blonde heroine in snow outside a castle, without watermark elements"></a></td><td align="center"><a href="assets/examples/fantasy-after.jpg"><img src="assets/examples/fantasy-after.jpg" width="350" alt="Same illustration after WatermarkPro processing with Portfolio Sample text, WP badge, and QR watermark"></a></td></tr>
+<tr><th width="50%">Before · Original artwork</th><th width="50%">After · WatermarkPro output</th></tr>
+<tr><td align="center"><a href="assets/examples/knight-before.jpg"><img src="assets/examples/knight-before.jpg" width="350" alt="Original silver-haired armored knight under moonlight, without watermark elements"></a></td><td align="center"><a href="assets/examples/knight-after.jpg"><img src="assets/examples/knight-after.jpg" width="350" alt="Same armored knight image with Portfolio Sample watermark text and WP badge"></a></td></tr>
 </table>
 
-**Features illustrated:** Text watermark · Logo mark · QR code. The QR destination was checked with a phone during the creator's review of these outputs.
+**Features illustrated:** Text watermark · Logo badge · Portrait-format processing.
+
+**Final approved export:** The creator supplied a new, genuine WatermarkPro export with the corrected **“Portfolio Sample”** label. This gallery uses that export, resized for public viewing.
 
 ## 2. Halloween poster — Promotional content and QR
 
@@ -30,18 +32,16 @@ A landscape promotional poster with its own artwork and lettering. The small ora
 
 **Features illustrated:** Promotional text watermark · QR code · Landscape-format processing.
 
-## 3. Armored knight — Minimal branding on digital artwork
+## 3. Fantasy illustration — Text, logo, and QR together
 
-A dark fantasy portrait demonstrating watermark text and a visible logo badge on a single-subject illustration.
+A detailed portrait scene demonstrating multiple watermark elements on a single piece of artwork. The watermark text stays unobtrusive while the logo and QR code remain recognizable.
 
 <table>
-<tr><th width="50%">Before · Original artwork</th><th width="50%">After · WatermarkPro output</th></tr>
-<tr><td align="center"><a href="assets/examples/knight-before.jpg"><img src="assets/examples/knight-before.jpg" width="350" alt="Original silver-haired armored knight under moonlight, without watermark elements"></a></td><td align="center"><a href="assets/examples/knight-after.jpg"><img src="assets/examples/knight-after.jpg" width="350" alt="Same armored knight image with Thumbnail Sample watermark text and WP badge"></a></td></tr>
+<tr><th width="50%">Before · Original illustration</th><th width="50%">After · WatermarkPro output</th></tr>
+<tr><td align="center"><a href="assets/examples/fantasy-before.jpg"><img src="assets/examples/fantasy-before.jpg" width="350" alt="Original fantasy illustration: blonde heroine in snow outside a castle, without watermark elements"></a></td><td align="center"><a href="assets/examples/fantasy-after.jpg"><img src="assets/examples/fantasy-after.jpg" width="350" alt="Same illustration after WatermarkPro processing with Portfolio Sample text, WP badge, and QR watermark"></a></td></tr>
 </table>
 
-**Features illustrated:** Text watermark · Logo badge · Portrait-format processing.
-
-**Presentation note:** The most recently supplied knight output still reads **“Thumbnail Sample.”** That was the actual WatermarkPro export supplied for this gallery. For a final polished artwork demonstration, replacing it with a re-export reading **“Portfolio Sample”** would be more consistent. This note will be removed after that corrected output is available.
+**Features illustrated:** Text watermark · Logo mark · QR code. The QR destination was checked with a phone during the creator's review of these outputs.
 
 ---
 
