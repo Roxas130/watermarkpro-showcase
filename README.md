@@ -7,7 +7,7 @@ An independent desktop software project focused on making image watermarking mor
 
 > **Portfolio showcase — not an application download.** WatermarkPro is a proprietary, private pre-release project. This repository contains selected screenshots, a product walkthrough, and evidence of testing and troubleshooting—not source code, executables, installers, or internal development materials.
 
-[**View the product tour**](PRODUCT_TOUR.md) · [**Explore the reliability case study**](CASE_STUDY.md) · [**Review testing evidence**](TESTING.md) · [**Rights & availability**](RIGHTS.md)
+[**See real before & after examples**](EXAMPLES.md) · [**View the product tour**](PRODUCT_TOUR.md) · [**Explore the reliability case study**](CASE_STUDY.md) · [**Review testing evidence**](TESTING.md) · [**Rights & availability**](RIGHTS.md)
 
 ---
 
@@ -63,6 +63,24 @@ An independent desktop software project focused on making image watermarking mor
 *All interface screenshots are from WatermarkPro and have approved redactions. The banner is original illustrative artwork inspired by the app, not a literal screenshot.*
 
 **[Walk through all four tabs with explanations →](PRODUCT_TOUR.md)**
+
+---
+
+## Before & after — actual WatermarkPro outputs
+
+A public comparison of images **before** processing and **after** WatermarkPro added watermark elements. The screenshots above show the interface; these comparisons show the actual output. Only reduced-resolution display copies are shared here to avoid distributing full-resolution unwatermarked artwork.
+
+<table>
+<tr><th width="50%">Before · Original promotional poster</th><th width="50%">After · WatermarkPro export</th></tr>
+<tr>
+<td align="center"><a href="assets/examples/halloween-before.jpg"><img src="assets/examples/halloween-before.jpg" width="420" alt="Original 50 Halloween Characters poster before watermarking"></a></td>
+<td align="center"><a href="assets/examples/halloween-after.jpg"><img src="assets/examples/halloween-after.jpg" width="420" alt="Same poster after WatermarkPro processing: Promo Demo text and QR code added"></a></td>
+</tr>
+</table>
+
+**[View the full three-example comparison gallery →](EXAMPLES.md)** · Fantasy illustration · Halloween promotional poster · Armored-knight artwork
+
+*The watermark elements in the After images were created by WatermarkPro, not simulated in the portfolio. The knight example retains its existing “Thumbnail Sample” label in this draft and can be swapped for a corrected export before publication.*
 
 ---
 
