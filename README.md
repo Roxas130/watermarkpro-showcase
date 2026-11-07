@@ -80,7 +80,7 @@ A public comparison of images **before** processing and **after** WatermarkPro a
 
 **[View the full three-example comparison gallery →](EXAMPLES.md)** · Fantasy illustration · Halloween promotional poster · Armored-knight artwork
 
-*The watermark elements in the After images were created by WatermarkPro, not simulated in the portfolio. The knight example retains its existing “Thumbnail Sample” label in this draft and can be swapped for a corrected export before publication.*
+*The After images were exported from WatermarkPro, not simulated for the portfolio. The corrected knight version says “Portfolio Sample.” Gallery assets are deliberately reduced-resolution public previews.*
 
 ---
 
