@@ -1,4 +1,4 @@
-![WatermarkPro — illustrated project banner](assets/watermarkpro-banner.svg)
+![WatermarkPro — dark-blue software portfolio banner](assets/WatermarkPro_Banner_v2.png)
 
 # WatermarkPro
 **Offline image watermarking • Preview-first workflow • Repeatable batch processing**
@@ -18,6 +18,24 @@ An independent desktop software project focused on making image watermarking mor
 <a href="assets/screenshots/WatermarkPro_Home_Safe.png"><img src="assets/screenshots/WatermarkPro_Home_Safe.png" alt="Real WatermarkPro Home screen displaying the image queue, output selection, watermark settings, and batch controls. Private local paths have been redacted." width="100%"></a>
 
 <sub>**Home —** Add images, select where results go, configure watermark settings, and run a batch. Click the image for the full-size screenshot.</sub>
+
+<details>
+<summary><strong>Zoom in: watermark and batch controls</strong></summary>
+
+<br/>
+
+<a href="assets/screenshots/WatermarkPro_Controls_Closeup_Safe.png"><img src="assets/screenshots/WatermarkPro_Controls_Closeup_Safe.png" alt="Tighter crop of actual Home tab showing the batch buttons and watermark text fields" width="100%"></a>
+
+<sub>Closer view of the real interface. The batch is ready to start, not shown as completed.</sub>
+
+</details>
+
+### What the watermark looks like in Preview
+
+<p align="center"><a href="assets/screenshots/WatermarkPro_Preview_Closeup_Safe.png"><img src="assets/screenshots/WatermarkPro_Preview_Closeup_Safe.png" alt="Close-up of real WatermarkPro preview with red text, WP logo and QR code on a sample portrait" width="410"></a></p>
+
+<sub>**Preview close-up —** Text, logo, and QR elements on a demonstration image. This is a crop from the app's Preview screen, **not a verified final export or a before-and-after comparison**.</sub>
+
 
 **Preview your watermark before committing to a batch.**
 
@@ -42,7 +60,7 @@ An independent desktop software project focused on making image watermarking mor
 
 </details>
 
-*Every screenshot here comes from WatermarkPro, not a generated mockup. Private local paths are covered in the published image files. The banner is illustrative artwork.*
+*All interface screenshots are from WatermarkPro and have approved redactions. The banner is original illustrative artwork inspired by the app, not a literal screenshot.*
 
 **[Walk through all four tabs with explanations →](PRODUCT_TOUR.md)**
 
@@ -66,13 +84,7 @@ The product is designed around a practical question: **How can someone watermark
 
 *These are selected internal test observations—not generalized benchmarks, independent certification, or a guarantee across all computers.*
 
-## A troubleshooting example
-
-During Windows testing, WatermarkPro became unexpectedly slow. The installed and portable versions exhibited similar behavior; everyday operations that had been responsive began taking about a minute.
-
-I investigated competing explanations, compared clean and affected application settings, worked through the corrective process with AI-assisted tools, and verified the outcome through repeated workflow checks. A preserved affected settings file was compacted from roughly **1.5 GB to 117 KB**, while important settings and selected source images were preserved in validation.
-
-**[Read the investigation, evidence, and lessons learned →](CASE_STUDY.md)**
+The performance result above came from controlled testing of an unusual settings-growth problem, followed by checks of responsiveness and preservation of important user settings. **[Read the investigation and verified outcome →](CASE_STUDY.md)**
 
 ## What I contributed
 
