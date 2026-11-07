@@ -20,6 +20,27 @@
 
 ---
 
+## See the application
+
+These are **actual WatermarkPro screenshots**, cropped and permanently redacted to conceal private local file paths. They are not mockups. The opening banner above is an illustration, not an application screenshot.
+
+<table>
+<tr>
+<td width="60%" valign="top">
+  <a href="assets/screenshots/WatermarkPro_Home_Safe.png"><img src="assets/screenshots/WatermarkPro_Home_Safe.png" alt="WatermarkPro Home screen showing input images, output controls, batch progress, and watermark settings" width="100%"></a>
+  <br><strong>Main workflow</strong> — Queue inputs, configure a watermark, choose outputs, and manage the batch.
+</td>
+<td width="40%" valign="top">
+  <a href="assets/screenshots/WatermarkPro_Preview_Safe.png"><img src="assets/screenshots/WatermarkPro_Preview_Safe.png" alt="WatermarkPro Preview screen showing a demonstration image with text, logo and QR watermark elements" width="100%"></a>
+  <br><strong>Preview</strong> — Inspect a sample image with a watermark before export.
+</td>
+</tr>
+</table>
+
+<a href="assets/screenshots/WatermarkPro_Settings_Safe.png"><img src="assets/screenshots/WatermarkPro_Settings_Safe.png" alt="WatermarkPro Settings screen showing appearance, storage, safety, history, and profile management" width="75%"></a>
+
+<sub><strong>Settings and safety:</strong> configurable appearance, storage controls, history retention, and profile import/export. The [full product tour](PRODUCT_TOUR.md) also shows the Advanced tab.</sub>
+
 ## At a glance: three pieces of evidence
 
 | **~1.5 GB → ~117 KB** | **33-image cancellation test** | **2 Ubuntu LTS versions** |
@@ -88,7 +109,7 @@ For employers, the value of this project is not only the app itself—it is the 
 | **Availability** | Private pre-release project; **no software downloads or sales link** in this portfolio |
 | **Source and rights** | Proprietary; [read the rights notice](RIGHTS.md) |
 
-**Portfolio media:** Actual interface screenshots and a demonstration can be added after a separate review for private paths, credentials, internal release information, and unreleased features. The banner above is illustrative artwork, not an application screenshot.
+**Portfolio media:** The gallery above uses selected, redacted screenshots of the private application. Images are for demonstration only and do not constitute a public app release. The banner is original illustrative artwork, not a screenshot.
 
 **Contact for professional inquiries:** [GitHub profile](https://github.com/Roxas130).
 
