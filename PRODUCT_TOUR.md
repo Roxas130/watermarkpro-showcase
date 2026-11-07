@@ -10,6 +10,34 @@ Applying watermarks to a handful of images is manageable by hand. Repeating a co
 
 WatermarkPro was developed around those practical concerns.
 
+## A closer look at the interface
+
+All images below are **real WatermarkPro application screenshots**. Private local paths have been permanently covered, and some views are cropped to emphasize the workflow.
+
+### Home — From input queue to processing controls
+
+![Redacted WatermarkPro Home screen showing input queue, output, watermark controls and run batch buttons](assets/screenshots/WatermarkPro_Home_Safe.png)
+
+The Home tab brings image selection, output destinations, watermark options, and batch controls into a single view. The screenshot demonstrates a queued image batch and an example watermark.
+
+### Preview — Check the result before exporting
+
+![Redacted WatermarkPro Preview screen with a portrait demonstration image, text watermark, logo and QR code](assets/screenshots/WatermarkPro_Preview_Safe.png)
+
+This preview demonstrates the primary watermark on a sample image, with thumbnail navigation for queued inputs. The preview is for assessing layout before export; additional multi-watermark entries may be applied during output processing.
+
+### Advanced — More than a one-click utility
+
+![Redacted WatermarkPro Advanced screen showing image output options, enhancements, automation, batch performance and customization](assets/screenshots/WatermarkPro_Advanced_Safe.png)
+
+The Advanced tab provides additional controls for image export, enhancements, automation, performance choices, and watermark customization. Not every option shown is necessarily enabled in this demonstration.
+
+### Settings — Reusable configuration and safer operation
+
+![Redacted WatermarkPro Settings screen showing appearance, storage, safety, history and profile import/export](assets/screenshots/WatermarkPro_Settings_Safe.png)
+
+Settings provide configurable appearance, storage location behavior, safety checks, history retention, and profile import/export. Those controls demonstrate why testing state persistence and recoverability mattered during development.
+
 ## From images to finished exports
 
 ```mermaid
