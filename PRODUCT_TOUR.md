@@ -1,105 +1,91 @@
-# WatermarkPro — Product walkthrough
+# WatermarkPro | Guided product tour
 
-[← Back to showcase](README.md) · [Reliability case study](CASE_STUDY.md) · [Testing overview](TESTING.md)
+[← Return to showcase](README.md) · [Reliability case study](CASE_STUDY.md) · [Testing approach](TESTING.md)
 
-This is a **public-facing overview of user capabilities**, not a technical specification, installation guide, source-code release, or promise of commercial availability.
+WatermarkPro is an **offline desktop tool** for applying watermarks across individual images or batches. This guided tour uses real, redacted screenshots from a private Windows release candidate. It demonstrates the experience, not a publicly available download.
 
-## The problem the product addresses
+> **What to look for:** A workflow organized around preparation, checking, processing, and reviewing results—along with settings that support repeated use.
 
-Applying watermarks to a handful of images is manageable by hand. Repeating a consistent watermark across a large group becomes harder: users need predictable settings, a chance to check appearance, and confidence that exported files won't unexpectedly replace their originals.
+## 1. Home — Prepare and run a batch
 
-WatermarkPro was developed around those practical concerns.
+<a href="assets/screenshots/WatermarkPro_Home_Safe.png"><img src="assets/screenshots/WatermarkPro_Home_Safe.png" alt="WatermarkPro Home tab with a queue of images, output configuration, watermark controls, and batch execution buttons." width="100%"></a>
 
-## A closer look at the interface
+<sub>Click to view the full-size Home screenshot. Local folder locations have been permanently covered.</sub>
 
-All images below are **real WatermarkPro application screenshots**. Private local paths have been permanently covered, and some views are cropped to emphasize the workflow.
+The Home tab gives the user one place to work through the essential setup.
 
-### Home — From input queue to processing controls
+| Visible area | What it enables |
+| --- | --- |
+| **Input Images** | Build a queue using individual files or folders |
+| **Output** | Choose the destination and output-handling preferences |
+| **Watermark Controls** | Enter watermark text; adjust appearance, placement, and logo options |
+| **Run Batch** | Start processing and monitor status |
 
-![Redacted WatermarkPro Home screen showing input queue, output, watermark controls and run batch buttons](assets/screenshots/WatermarkPro_Home_Safe.png)
+**Why it matters:** A repeatable batch should be configured in a predictable sequence, not require users to jump between unrelated screens.
 
-The Home tab brings image selection, output destinations, watermark options, and batch controls into a single view. The screenshot demonstrates a queued image batch and an example watermark.
+## 2. Preview — Check before exporting
 
-### Preview — Check the result before exporting
+<p align="center"><a href="assets/screenshots/WatermarkPro_Preview_Safe.png"><img src="assets/screenshots/WatermarkPro_Preview_Safe.png" alt="WatermarkPro Preview tab showing a demonstration image with a red text watermark, a WP logo, a QR code, and image navigation controls." width="650"></a></p>
 
-![Redacted WatermarkPro Preview screen with a portrait demonstration image, text watermark, logo and QR code](assets/screenshots/WatermarkPro_Preview_Safe.png)
+<sub>Example preview shown with demonstration content; image navigation and thumbnails support checking the selected inputs.</sub>
 
-This preview demonstrates the primary watermark on a sample image, with thumbnail navigation for queued inputs. The preview is for assessing layout before export; additional multi-watermark entries may be applied during output processing.
+The Preview tab helps the user assess the **primary watermark's appearance and placement** before a longer batch. The example contains a text overlay, logo mark, and QR element.
 
-### Advanced — More than a one-click utility
+**Important behavior:** The primary watermark is previewed; additional multi-watermark entries may be applied during the final export. Previewing helps catch layout issues, but checking the exported image remains important.
 
-![Redacted WatermarkPro Advanced screen showing image output options, enhancements, automation, batch performance and customization](assets/screenshots/WatermarkPro_Advanced_Safe.png)
+## 3. Advanced — Adjust output behavior
 
-The Advanced tab provides additional controls for image export, enhancements, automation, performance choices, and watermark customization. Not every option shown is necessarily enabled in this demonstration.
+<p align="center"><a href="assets/screenshots/WatermarkPro_Advanced_Safe.png"><img src="assets/screenshots/WatermarkPro_Advanced_Safe.png" alt="WatermarkPro Advanced tab showing output format, enhancements, archive and backup options, performance controls, and watermark customization." width="720"></a></p>
 
-### Settings — Reusable configuration and safer operation
+<sub>The backup folder path is permanently redacted. Not every setting shown is enabled in the example.</sub>
 
-![Redacted WatermarkPro Settings screen showing appearance, storage, safety, history and profile import/export](assets/screenshots/WatermarkPro_Settings_Safe.png)
+The Advanced tab groups capabilities that users may want to change less frequently:
 
-Settings provide configurable appearance, storage location behavior, safety checks, history retention, and profile import/export. Those controls demonstrate why testing state persistence and recoverability mattered during development.
+- **Output formats and image adjustments:** Format choices plus optional resizing and image enhancements.
+- **Automation:** Optional backup and archive settings.
+- **Customization:** Additional watermark behavior, including QR-related settings.
+- **Performance:** Processing-related options for suitable workloads.
 
-## From images to finished exports
+**Why it matters:** Keeping optional controls available without making them mandatory supports both simple and more involved workflows.
+
+## 4. Settings — Persistence, safety, and reusable profiles
+
+<a href="assets/screenshots/WatermarkPro_Settings_Safe.png"><img src="assets/screenshots/WatermarkPro_Settings_Safe.png" alt="WatermarkPro Settings tab showing appearance, file storage options, safety, history, and profile export/import." width="100%"></a>
+
+<sub>Local configuration path permanently redacted. This is a real settings screen, not a conceptual mockup.</sub>
+
+Settings make the tool usable beyond a single demonstration:
+
+| Area | Purpose |
+| --- | --- |
+| **Appearance** | Theme preference |
+| **Storage and safety** | Where configuration lives, with options related to safer file behavior |
+| **History** | Retention and exporting prior batch records |
+| **Profiles** | Export and import reusable configurations |
+
+A major part of the project's hands-on testing involved verifying that preferences, templates, and history behaved correctly after closing and reopening the app. The [reliability case study](CASE_STUDY.md) illustrates why persistent settings deserved careful attention.
+
+---
+
+## From setup to verified outputs
 
 ```mermaid
-flowchart TD
-    A["Select local images"] --> B["Choose watermark type"]
-    B --> C["Adjust appearance"]
-    C --> D["Review primary watermark preview"]
-    D --> E{"Ready to export?"}
-    E -- "Adjust" --> C
-    E -- "Yes" --> F["Run a batch"]
-    F --> G["Check results and history"]
-    G --> H["Optional ZIP packaging"]
+flowchart LR
+    A["Select images"] --> B["Configure watermark"]
+    B --> C["Review preview"]
+    C --> D["Process batch"]
+    D --> E["Inspect outputs"]
+    E --> F["Optional ZIP"]
 ```
 
-*This is a conceptual user workflow, not a reproduction of the internal application logic.*
+*Illustrative user journey, not an internal architecture or source-code diagram.*
 
-### 1. Choose the watermark
+WatermarkPro's user-facing design places emphasis on understandable settings, repeatable work, and protecting selected original images. Cancellation outcomes, output handling, and settings persistence were all subjects of private validation.
 
-Users can work with **text**, **logo/image**, and **QR** watermark types, depending on the purpose of the output. Settings can be adjusted for appearance and positioning.
+## What these screenshots prove — and what they don't
 
-### 2. Preview before processing
+They show a **working desktop user interface with distinct features and workflows**. They are not proof of compatibility across every operating system or device, and they do not make the application available for download.
 
-The interface supports previewing the main watermark before export. This is especially useful when experimenting with size or placement.
+For evidence about specific tests, see **[Testing and release validation](TESTING.md)**. For a measurable troubleshooting example, see **[Reliability case study](CASE_STUDY.md)**.
 
-**Accuracy note:** the preview represents the primary watermark settings; some multi-watermark layouts are applied during final export. A batch result remains the definitive output to review.
-
-### 3. Reuse settings
-
-Reusable settings and templates reduce the need to manually recreate the same choices for every batch.
-
-### 4. Run and review a batch
-
-The application processes selected local images and provides completion information. Cancellation and output checking were important areas of testing, because stopping work should not leave the user uncertain about what completed.
-
-### 5. Manage resulting files
-
-Features developed and tested include output history, optional ZIP creation, and protections intended to preserve selected source images rather than overwrite them unexpectedly. Behavior is evaluated in private release testing; this portfolio is not a universal reliability guarantee.
-
-## Feature groups
-
-| Area | User-facing capabilities |
-| --- | --- |
-| Watermark creation | Text, logo/image and QR watermark options |
-| Preview and consistency | Preview controls; reusable settings and templates |
-| Batch operations | Multi-image processing, status reporting, cancellation |
-| Output management | History, optional ZIP archives, checks designed to protect selected originals |
-| Optional adjustments | Image resize and basic appearance adjustments, where enabled |
-
-## A product-design priority: preserve trust
-
-Several design and validation questions guided the project:
-
-- Can a user tell **what will be applied** before running a batch?
-- Can settings be **saved and reused**?
-- If processing is interrupted, can the user distinguish **completed, cancelled, and failed** work?
-- Are selected source images **protected** while outputs are produced?
-- If a problem is fixed, does the normal workflow **still work afterward**?
-
-These questions drove much of the independent testing and troubleshooting work documented elsewhere in this portfolio.
-
-## Where to go next
-
-For a specific investigation with measurable before/after evidence, read the **[reliability case study](CASE_STUDY.md)**. For platform coverage and validation methods, see **[testing and release checks](TESTING.md)**.
-
-> **Availability:** This is a portfolio demonstration of a private software project. There is no executable, installer, source download, or purchase link in this repository. Any future distribution will be announced separately.
+> **Distribution:** WatermarkPro remains a private, proprietary project with possible future commercial availability. No application source, binary, build process, or internal test data is shared in this portfolio.
